@@ -1,0 +1,42 @@
+div {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+}
+.polka {
+  background: #655;
+  background-image: radial-gradient(#d2b48c 30%, transparent 0), radial-gradient(#d2b48c 30%, transparent 0);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+}
+.checkerboard {
+  background: #58a;
+  background-image: linear-gradient(45deg, #d2b48c 25%, transparent 0, transparent 75%, #d2b48c 0), linear-gradient(45deg, #d2b48c 25%, transparent 0, transparent 75%, #d2b48c 0);
+  background-position: 0 0, 15px 15px;
+  background-size: 30px 30px;
+}
+.beveled-corners {
+  background: #58a;
+  background: linear-gradient(135deg, transparent 15px, #58a 0) top left, linear-gradient(225deg, transparent 15px, #58a 0) top right, linear-gradient(-45deg, transparent 15px, #58a 0) bottom right, linear-gradient(45deg, transparent 15px, #58a 0) bottom left;
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+}
+.folded-corner {
+  position: relative;
+  background: #58a;
+  background: linear-gradient(-150deg, transparent 2em, #58a 0);
+  border-radius: 0.5em;
+}
+.folded-corner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: linear-gradient(to left bottom, transparent 50%, rgba(0,0,0,0.2) 0, rgba(0,0,0,0.4)) 100% 0 no-repeat;
+  width: 2.309401076183673em;
+  height: 4em;
+  transform: translateY(-1.690598923816327em) rotate(-30deg);
+  transform-origin: bottom right;
+  border-bottom-left-radius: inherit;
+  box-shadow: -0.2em 0.2em 0.3em -0.1em rgba(0,0,0,0.2);
+}

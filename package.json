@@ -1,0 +1,24 @@
+{
+  "name": "Background-Stylus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "stylus": "stylus -w ./index.styl -o ./css/index.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhoujing0519/Background-Stylus.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhoujing0519/Background-Stylus/issues"
+  },
+  "homepage": "https://github.com/zhoujing0519/Background-Stylus#readme",
+  "devDependencies": {
+    "stylus": "^0.54.5"
+  }
+}
